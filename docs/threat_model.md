@@ -1,9 +1,9 @@
 # Threat Model – To-Do List Web App
 
-
 ## Scope & Assets
 
-Service: 
+Service:
+
     - A to-do list web application where users can register, log in, and manage notes.
 
 Assets to protect:
@@ -16,6 +16,7 @@ Assets to protect:
 ##  System Decomposition
 
 Flow:
+
     - User enters credentials in a web form.
     - Credentials sent over HTTPS to backend API.
     - Backend verifies user with DB (hashed + salted password).
@@ -52,29 +53,31 @@ Trust boundaries:
 ## Mitigations
 
 Authentication:
-    - Rate limiting, CAPTCHA, MFA
-    - Strong password hashing (bcrypt/Argon2 + salt)
+
+- Rate limiting, CAPTCHA, MFA
+- Strong password hashing (bcrypt/Argon2 + salt)
 
 Session Security:
-    - HTTPS everywhere, secure cookie flags (HttpOnly, SameSite)
+
+- HTTPS everywhere, secure cookie flags (HttpOnly, SameSite)
 
 Injection protection:
-    - Parameterized queries / ORM
-    - Least privilege DB account
+- Parameterized queries / ORM
+- Least privilege DB account
 
 XSS Protection:
-    - Input sanitization, output encoding
-    - Content Security Policy (CSP)
+- Input sanitization, output encoding
+- Content Security Policy (CSP)
 
 CSRF Protection:
-    - CSRF tokens, SameSite cookies
+- CSRF tokens, SameSite cookies
 
 Availability:
-    - Rate limiting on login + note creation
-    - WAF or API gateway protections
+- Rate limiting on login + note creation
+- WAF or API gateway protections
 
 Auditing & Logging:
-    - Centralized login + note action logs
+- Centralized login + note action logs
 
 ## Validation & Iteration
 
