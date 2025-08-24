@@ -1,4 +1,4 @@
-# Hypothetical To-Do List Web App – Threat Modeling
+# Hypothetical To-Do List Web App – Threat Modelling
 
 ## Overview
 This repository contains a **hypothetical threat model** for a simple to-do list web application.  
