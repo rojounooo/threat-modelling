@@ -23,3 +23,9 @@ This web application allows users to register, log in, and manage personal to-do
 ## Diagram (simplified)
 
 [User] <--> HTTPS <--> [Backend API] <--> [Database]
+
+## Technology Stack (Hypothetical)
+
+- Frontend: React 
+- Backend: Node.js 
+- Database: PostgreSQL 
