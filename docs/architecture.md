@@ -23,22 +23,3 @@ This web application allows users to register, log in, and manage personal to-do
 ## Diagram (simplified)
 
 [User] <--> HTTPS <--> [Backend API] <--> [Database]
-
-
-## Assumptions 
-- Users access the service through modern browsers with HTTPS support
-- Backend and database are hosted in a trusted cloud environment
-- No third-party authentication (e.g. Google, Microsoft, Github login)
-- Notes are private to each user 
-
-## Technology Stack (Hypothetical)
-
-- Frontend: React 
-- Backend: Node.js 
-- Database: PostgreSQL 
-
-## Data Classification
-
-- Credentials: High sensitivity 
-- Session Tokens: High sensitivity
-- Notes: Medium sensitivity
